@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#bookList {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.book {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.book h2 {
+    margin-top: 0;
+}
+
+.book p {
+    margin: 5px 0;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    float: right;
+}
+
+/* Styles for form popup */
+.form-popup {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    background-color: #fefefe;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 20px;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], 
+.form-container input[type=number], 
+.form-container input[type=checkbox] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* When the cancel button is clicked, close the popup form */
+.cancel {
+    background-color: #f44336;
+}
+
+/* Add a hover effect for buttons */
+.btn:hover, .cancel:hover {
+    opacity: 0.8;
+}
+
+/* Add padding and border to container */
+.form-container {
+    padding: 20px;
+    border: none;
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}

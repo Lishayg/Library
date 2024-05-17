@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Library</h1>
+    </header>
+    <div id="bookList">
+        <!-- Book list will be populated dynamically -->
+    </div>
+    <button id="toggleFormBtn">Add Book</button>
+    <div id="formPopup" class="form-popup">
+        <form id="bookForm" class="form-container">
+            <h2>Add a New Book</h2>
+            <label for="title"><b>Title:</b></label>
+            <input type="text" placeholder="Enter Title" name="title" required>
+
+            <label for="author"><b>Author:</b></label>
+            <input type="text" placeholder="Enter Author" name="author" required>
+
+            <label for="pages"><b>Pages:</b></label>
+            <input type="number" placeholder="Enter Pages" name="pages" required>
+
+            <label for="read"><b>Read:</b></label>
+            <input type="checkbox" name="read">
+
+            <button type="button" id="cancelBtn" class="btn cancel">Cancel</button>
+            <button type="submit" class="btn">Add Book</button>
+        </form>
+    </div>
+    <script src="library.js"></script>
+</body>
+</html>
